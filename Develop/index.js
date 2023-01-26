@@ -38,10 +38,10 @@ inquirer
         ${answers.names}
         https://github.com/${answers.usernames}
 
-        ## License 
+        ${answers.license === 'None'? "": `## License 
         
-        https://img.shields.io/badge/license-${answers.license}-green
-
+        https://img.shields.io/badge/license-${answers.license}-green`}
+        
         ## Feature
 
         ${answers.feature}
